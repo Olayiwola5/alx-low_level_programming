@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-	write(Anyg, " and that piece of art is useful\"-Dora Korpar, 2015-10-19", 59);
+	write(2, A, " and that piece of art is useful\"-Dora Korpar, 2015-10-19", 59);
 	return (1);
 }
