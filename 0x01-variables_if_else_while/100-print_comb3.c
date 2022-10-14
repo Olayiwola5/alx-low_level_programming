@@ -1,21 +1,22 @@
 #include <stdio.h>
 /**
- *  * main - print numbers from 00 to 99.
- *   * Return: 0 on success
+ * main - print numbers from 00 to 99.
+ * Return: 0 on success
  */
 int main(void)
 {
-	int a = '0';
-	int b == '0';
+	int i = '0';
+	int j = '0';
 
-	while (a <= '9')
+	while (i <= '9')
 	{
-		while (b <= '9')
+		while (j <= '9')
 		{
-			if (!(a > b || a == b)
+			if (!(i > j || i == j))
 			{
-				putchar(a);
-				putchar(b);							     if (a == '8' && b == '9')
+				putchar(i);
+				putchar(j);
+				if (i == '8' && j == '9')
 				{
 					putchar('\n');
 				}
@@ -25,10 +26,11 @@ int main(void)
 					putchar(' ');
 				}
 			}
-			b++;
+			j++;
 		}
-		b = '0';
-		a++;
+		j = '0';
+		i++;
 	}
 	return (0);
 }
+
