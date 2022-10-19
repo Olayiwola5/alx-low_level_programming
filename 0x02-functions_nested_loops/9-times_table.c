@@ -26,10 +26,20 @@ void times_table(void)
 					_putchar(' ');
 				}
 			}
+			else
+			{
+				_putchar(((x * y) / 10) + '0');
+				_putchar(((x * y) % 10) + '0');
+				if (y != 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
+			}
 			y++;
 		}
 		_putchar('\n');
 		x++;
 	}
-}
 
+}
