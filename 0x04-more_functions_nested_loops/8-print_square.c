@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_square - Print square line dependent on the integer n.
- * @n : The number of lines using '#' characters to use per row and column
- * Return: Void.
+ * print_square - a function that prints a square, followed by a new line
+ * @size: size of both width and length
+ * Return: a square made of '#'
  */
 void print_square(int size)
 {
