@@ -1,6 +1,4 @@
-nclude "main.h"
-#include <stdio.h>
-
+#include "main.h"
 /**
  * mul - Multiply 2 integers.
  * @a: An integer to be multiplied with b
