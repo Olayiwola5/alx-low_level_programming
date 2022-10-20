@@ -6,22 +6,22 @@
  */
 void print_diagonal(int n)
 {
-	int i;
-	int spaces;
-
-	for (i = 0; i < n; i++)
-	{
-		for (spaces = 0; spaces < i; spaces++)
-		{
-			_putchar(' ');
-		}
-		_putchar('\\');
-		_putchar('\n');
-	}
+	int co, sp;
 
 	if (n <= 0)
 	{
 		_putchar('\n');
 	}
+	else
+	{
+		for (co = 1; co <= n; co++)
+		{
+			for (sp = 1; sp < co; sp++)
+			{
+				_putchar(' ');
+			}
+			_putchar('\\');
+			_putchar('\n');
+		}
+	}
 }
-
