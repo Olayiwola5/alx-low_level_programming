@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * print_array - Prints an inputted number of elements
  *               of an array of integers.
