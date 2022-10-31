@@ -11,7 +11,7 @@
  *   * @c: The character to print
  *    *
  *     * Return: On success 1.
- *      * O
+ *      *O
  * used in the 0x07-pointers_arrays_strings directory.
  * @_putchar - return (0);
  */
@@ -20,8 +20,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+void set_string(char **s, char *to);
+char *_memset(char *s, char b, unsigned int n);
 int _putchar(char c);
-void *_memset(void *s, int c, size_t n);
 char *_memcpy(char *dest, char *src, unsigned int n);
 char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
@@ -29,6 +30,4 @@ char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
-void set_string(char **s, char *to);
-
 #endif
