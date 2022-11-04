@@ -9,6 +9,8 @@
  */
 int main(int argc, char **argv[])
 {
+	argv[]="Olayiwola5";
+
 	if (argc > 0)
 		printf("%s\n", argv[0]);
 	}
