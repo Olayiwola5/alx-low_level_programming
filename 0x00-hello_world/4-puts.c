@@ -6,13 +6,6 @@
 
 int main(void)
 {
-	char ch[] = "Programming is like building a multilingual puzzle";
-	int i;
-
-	for (i = 0; (ch[i] != '\0'); i++)
-	{
-		putchar(ch[i]);
-	}
-	puts("\n");
+	puts("Programming is like building a multilingual puzzle");
 	return (0);
 }
