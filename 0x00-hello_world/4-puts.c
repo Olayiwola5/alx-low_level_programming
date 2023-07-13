@@ -7,6 +7,7 @@
 int main(void)
 {
 	char ch[] = "Programming is like building a multilingual puzzle";
+
 	for (int i = 0; (ch[i] != '\0'); i++)
 	{
 		putchar(ch[i]);
