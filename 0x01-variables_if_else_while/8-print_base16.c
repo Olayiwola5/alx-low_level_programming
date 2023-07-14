@@ -4,7 +4,7 @@
   *
   * written by Olayiwola5
   *
-  * Description - Write a program that prints all the numbers * 
+  * Description - Write a program that prints all the numbers
   * of base 16 in lowercase, followed by a new line.
   * You can only use the putchar function
   *
