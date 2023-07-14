@@ -20,22 +20,29 @@
 */
 int main(void)
 {
-	int x;
-	int y;
+	int digit1 = 0, digit2;
 
-	for (x = 48; x < 58; x++)
+	while (digit1 <= 9)
 	{
-		for (y = 49; y < 58; y++)
+		digit2 = 0;
+		while (digit2 <= 9)
 		{
-			putchar(x);
-			putchar(y);
-			if (y < 57)
+			if (digit1 != digit2 && digit1 < digit2)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(digit1 + 48);
+				putchar(digit2 + 48);
+
+				if (digit1 + digit2 != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
+			++digit2;
 		}
-		putchar('\n');
+		++digit1;
 	}
+	putchar('\n');
+
 	return (0);
 }
