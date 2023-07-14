@@ -11,7 +11,6 @@
 int main(void)
 {
 	int ch;
-	int i;
 
 	ch = 'a';
 	while (ch <= 'z')
