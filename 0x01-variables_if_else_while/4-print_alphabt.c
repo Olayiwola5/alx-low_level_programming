@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 /**
   * main - Entry point
   *
@@ -14,12 +15,12 @@ int main(void)
 {
 	int ch;
 
-	ch = 'a';
-	while (ch <= 'z')
+	ch = 'A';
+	while (ch <= 'Z')
 	{
-		putchar(ch);
+		putchar(tolower(ch));
 		ch++;
-		if (ch == 'q' || ch == 'e')
+		if (ch == 'Q' || ch == 'E')
 		{
 			ch++;
 		}
