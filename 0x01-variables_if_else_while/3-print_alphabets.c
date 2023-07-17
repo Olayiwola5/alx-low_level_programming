@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 /**
   * main - Entry point
   *
@@ -20,10 +22,10 @@ int main(void)
 		putchar(ch);
 		ch++;
 	}
-	ch = 'A';
-	while (ch <= 'Z')
+	ch = 'a';
+	while (ch <= 'z')
 	{
-		putchar(ch);
+		putchar(toupper(ch));
 		ch++;
 	}
 	putchar('\n');
