@@ -1,18 +1,16 @@
-#include "main.h"
+#include"main.h"
+
 /**
-  * main - Entry point
-  *
-  * written by Olayiwola
-  *
-  * Description - Write a program that finds and 
-  * prints the first 98 Fibonacci numbers,starting with 1 and 2,
-  * followed by a new line.
-  *
-  * Return: 0 (success)
+ * numLength - returns the length of string
+ *
+ * @num: operand number
+ *
+ * Return: number of digits
 */
-int num_len(int num)
+
+int numLength(int num)
 {
-	int len = 0;
+	int length = 0;
 
 	if (!num)
 		return (1);
@@ -20,10 +18,10 @@ int num_len(int num)
 	while (num)
 	{
 		num = num / 10;
-		len += 1;
+		length += 1;
 	}
 
-	return (len);
+	return (length);
 }
 
 /**
@@ -32,7 +30,8 @@ int num_len(int num)
  * Description: prints the first 98 Fibonacci numbers
  *	starting with 1 and 2 followed by a new line
  *
- * Solution was copied from Nobert Patrick Wise, github handle: Trikcode
+ *	Solution was copied from Nobert Patrick
+ *	Wise, github handle: Trikcode
  *
  * Return: Always 0 (Success)
 */
@@ -46,7 +45,7 @@ int main(void)
 	{
 		if (f1o > 0)
 			printf("%lu", f1o);
-		initial0s = num_len(mx) - 1 - num_len(f1);
+		initial0s = numLength(mx) - 1 - numLength(f1);
 
 		while (f1o > 0 && initial0s > 0)
 		{

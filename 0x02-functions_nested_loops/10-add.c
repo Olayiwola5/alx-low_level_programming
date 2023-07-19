@@ -1,15 +1,17 @@
-#include "main.h"
+#include"main.h"
+
 /**
-  * main - Entry point
-  *
-  * written by Olayiwola
-  *
-  * Description - Write a function that adds two integers and returns the result. 
-  *
-  * Return: 0 (success)
+ * add - add two integers
+ *
+ * @a: first input
+ * @b: second input
+ *
+ * Return: sum of a & b
 */
-int add(int x, int y)
+
+int add(int a, int b)
 {
-	result = x + y;
-	return (result);
+	int sum = a + b;
+
+	return (sum);
 }

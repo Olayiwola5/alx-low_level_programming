@@ -1,13 +1,11 @@
-#include "main.h"
+#include"main.h"
+
 /**
-  * main - Entry point
-  *
-  * written by Olayiwola
-  *
-  * Description -  Write a function that prints the n times table, starting with 0.
-  *
-  * Return: 0 (success)
+ * print_times_table - prints time table of n
+ *
+ * @n: takes number input
 */
+
 void print_times_table(int n)
 {
 	int prod, mult, num;

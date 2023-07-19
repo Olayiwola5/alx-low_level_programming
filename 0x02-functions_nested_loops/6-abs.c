@@ -1,15 +1,15 @@
-#include "main.h"
+#include"main.h"
+
 /**
-  * main - Entry point
-  *
-  * written by Olayiwola
-  *
-  * Description - Write a function that computes the absolute
-  * value of an integer.
-  *
-  * Return: 0 (success)
+ * _abs - function that computes the absolute
+ *       value of an integer
+ *
+ * @n: takes in integer type input for function
+ *
+ * Return: Always 0 (Success)
 */
-int _abs(int)
+
+int _abs(int n)
 {
 	if (n < 0)
 		n = (-1) * n;

@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * main - Entry point 
+  * main - Entry point
   *
   * written by Olayiwola
   *
@@ -14,8 +14,8 @@ int main(void)
 	char string[] = "_putchar";
 	int i;
 
-	i = 0; 
-	while(string[i] != '\0')
+	i = 0;
+	while (string[i] != '\0')
 	{
 		_putchar(string[i]);
 		i++;

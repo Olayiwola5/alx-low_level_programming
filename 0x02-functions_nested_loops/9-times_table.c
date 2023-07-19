@@ -1,30 +1,31 @@
-#include "main.h"
+#include"main.h"
+
 /**
-  * main - Entry point
-  *
-  * written by Olayiwola
-  *
-  * Description - Write a function that prints the 9 times table, starting with 0. 
-  *
-  * Return: 0 (success)
+ * times_table - prints the 9 times table
+ *
+ * Illustration 
+ * 0, 0, 0, 0, ..
+ * 0, 1, 2, 3, ..
+ *
 */
+
 void times_table(void)
 {
-	int number, multiplication, product;
+	int index, mult, product;
 
-	for (number = 0; number <= 9; ++number)
+	for (index = 0; index <= 9; ++index)
 	{
 		_putchar(48);
-		for (multiplication = 1; multiplication <= 9; ++multiplication)
+		for (mult = 1; mult <= 9; ++mult)
 		{
 			_putchar(',');
 			_putchar(' ');
 
-			product = number * multiplication;
+			product = index * mult;
 
 			/*
-			 * put space if productuct is a single numberber
-			 * place the first digit if its two numberbers
+			 * put space if productuct is a single indexber
+			 * place the first digit if its two indexbers
 			*/
 			if (product <= 9)
 				_putchar(' ');

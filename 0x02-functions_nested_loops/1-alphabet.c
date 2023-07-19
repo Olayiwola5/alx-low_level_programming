@@ -1,17 +1,12 @@
 #include "main.h"
 /**
-  * main - Entry point
-  *
-  * written by Olayiwola
-  *
-  * Description - Write a function that prints the alphabet,
-  * in lowercase, followed by a new line.
-  *
-  * Return: 0 (success)
+ * print_alphabet - utilizes on the _putchar function to print
+ *                 the alphabet a - z
 */
 void print_alphabet(void)
 {
 	int ch;
+
 	ch = 'a';
 	while (ch <= 'z')
 	{

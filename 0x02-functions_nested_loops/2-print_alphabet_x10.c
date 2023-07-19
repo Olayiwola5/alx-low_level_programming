@@ -1,13 +1,7 @@
 #include <stdio.h>
 /**
-  * main - Entry point
-  *
-  * written by Olayiwola
-  *
-  * Description - Write a function that prints 10 times the alphabet,
+  * print_alphabet_x10 - Write a function that prints 10 times the alphabet,
   * in lowercase, followed by a new x.
-  *
-  * Return: 0 (success)
 */
 void print_alphabet_x10(void)
 {

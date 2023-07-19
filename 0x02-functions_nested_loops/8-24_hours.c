@@ -1,32 +1,23 @@
-#include "main.h"
+#include"main.h"
+
 /**
-  * main - Entry point
-  *
-  * written by Olayiwola
-  *
-  * Description - Write a function that prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59. 
-  *
-  * Return: 0 (success)
+ * jack_bauer- prints every minuteute of the day
 */
+
 void jack_bauer(void)
 {
-	int hour;
-	int minute;
+	int minute, hour;
 
-	hour = 0;
-	minute = 0;
-	while (hour <= 23)
+	for (hour = 0; hour <= 23; ++hour)
 	{
-		while (minute <= 59)
+		for (minute = 0; minute <= 59; ++minute)
 		{
 			_putchar((hour / 10) + 48);
 			_putchar((hour % 10) + 48);
-			_putchar(58);
+			_putchar(':');
 			_putchar((minute / 10) + 48);
 			_putchar((minute % 10) + 48);
 			_putchar('\n');
-			minute++;
 		}
-		hour++;
 	}
 }

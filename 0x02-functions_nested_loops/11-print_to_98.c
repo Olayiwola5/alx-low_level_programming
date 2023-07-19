@@ -1,31 +1,23 @@
-#include "main.h"
+#include"main.h"
+
 /**
-  * main - Entry point
-  *
-  * written by Olayiwola
-  *
-  * Description - Write a function that prints all natural numbers from n to 98, followed by a new line.
-  *
-  * Return: 0 (success)
+ * print_to_98 - print n to 98 indexs
+ *           separated by comma, followed
+ *           by space and number should be
+ *           printed in order
+ *
+ * @n: input
 */
+
 void print_to_98(int n)
 {
-	int count;
-
+	int index;
 
 	if (n > 98)
-	{
-		for ( count = n; count> 98; --count)
-		{
-			printf("%d ", count);
-		}
+		for (index = n; index > 98; --index)
+			printf("%d, ", index);
 	else
-	{
-		for (count = n; count < 98; ++count)
-		{				
-			printf("%d ", count);
-		}
-	}
+		for (index = n; index < 98; ++index)
+			printf("%d, ", index);
 	printf("98\n");
-	
 }
