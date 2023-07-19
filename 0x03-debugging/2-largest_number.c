@@ -1,25 +1,25 @@
 #include "main.h"
 /**
-  * main - Entry point
-  *
-  * written by Olayiwola
-  *
-  * Description - 
-  *
-  * Return: 0 (success)
-*/
+ * main - Entry point
+ *
+ * written by Olayiwol
+ *
+ * Description - This program prints the largest of three integers.
+ *
+ * Return: 0 (success)
+ */
 int main(void)
 {
-	int a, b, c;
-        int largest;
+	int a;
+	int b;
+	int c;
+	int largest;
 
-        a = 972;
-        b = -98;
-        c = 0;
-
-        largest = largest_number(a, b, c);
-
-        printf("%d is the largest number\n", largest);
+	a = 972;
+	b = -98;
+	c = 0;
+	largest = largest_number(a, b, c);
+	printf("%d is the largest number\n", largest);
 	return (0);
 }
 /**
@@ -32,20 +32,19 @@ int main(void)
 
 int largest_number(int a, int b, int c)
 {
-    int largest;
+	int largest;
 
-    if (a > b && a > c)
-    {
-        largest = a;
-    }
-    else if (b > a && b > c)
-    {
-        largest = b;
-    }
-    else
-    {
-        largest = c;
-    }
-
-    return (largest);
+	if (a > b && a > c)
+	{
+		largest = a;
+	}
+	else if (b > a && b > c)
+	{
+		largest = b;
+	}
+	else
+	{
+		largest = c;
+	}
+	return (largest);
 }
