@@ -1,9 +1,10 @@
 #include "main.h"
 /**
-  * written by Olayiwola
-  *
-  *
-  * Return:
+  * print_number - Write a function that prints an integer.
+  * Prototype: void print_number(int n);
+  * You can only use _putchar function to print
+  * @n: int parameter
+  * Return: NULL
 */
 void print_number(int n)
 {
