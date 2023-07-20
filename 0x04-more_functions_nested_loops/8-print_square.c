@@ -1,21 +1,29 @@
 #include "main.h"
+
 /**
-  * print_square - Write a function that prints a square,
-  * followed by a new line.
-  * @size: int size of  squeare
-  * Return: NULL
-*/
+ * print_square - print a square
+ * @size: size of square
+ * Description: Can only use _putchar to print. Use '#' to print square.
+ */
+
 void print_square(int size)
 {
-	int x;
-	int y;
+	int x, y;
 
-	for (x = 0; x < size; x++)
+	y = 0;
+
+	if (size < 1)
+		_putchar('\n');
+
+	while (y < size)
 	{
-		for (y = 1; y <= size; y++)
+		x = 0;
+		while (x < size)
 		{
-			_putchar(35);
+			_putchar('#');
+			x++;
 		}
 		_putchar('\n');
+		y++;
 	}
 }
