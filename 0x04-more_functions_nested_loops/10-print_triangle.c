@@ -1,10 +1,8 @@
 #include "main.h"
-#include "_putchar.c"
 /**
-  * print_triangle - Write a function that prints a triangle, followed by a new line.
-  * @size: argument to functioN
-  * Return: NULL
-*/
+ * print_triangle - print a triangle aligned right, using '#'
+ * @size: Size of triangle
+ */
 void print_triangle(int size)
 {
 	int c, i, j;
@@ -31,13 +29,4 @@ void print_triangle(int size)
 
 	if (size <= 0)
 		_putchar('\n');
-}
-int main(void)
-{
-	int n;
-
-	n = 10;
-	print_triangle(n);
-
-	return (0);
 }

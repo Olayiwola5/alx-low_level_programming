@@ -1,6 +1,7 @@
 #include "main.h"
 /**
-  * print_square - Write a function that prints a square, followed by a new line.
+  * print_square - Write a function that prints a square,
+  * followed by a new line.
   * @size: int size of  squeare
   * Return: NULL
 */

@@ -1,7 +1,7 @@
 #include <math.h>
 #include <stdio.h>
 /**
-  * main - Write a program that finds and prints the largest 
+  * main - Write a program that finds and prints the largest
   * prime factor of the number 612852475143, followed by a new line.
   * Return: 0 (sucess)
 */
