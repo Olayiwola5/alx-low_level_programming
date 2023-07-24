@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * _puts - print a string to stdout
- * @str: char array string type
- * Description: Can only use _putchar
- */
+  * _puts - Write a function that prints a string,
+  * followed by a new line, to stdout.
+  *
+  * Return: NULL
+*/
 void _puts(char *str)
 {
 	int len;
