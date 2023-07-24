@@ -12,7 +12,6 @@ char *_strcpy(char *dest, char *src)
 {
 	int len;
 	int i;
-	char c;
 
 	i = 0;
 	len = 0;
