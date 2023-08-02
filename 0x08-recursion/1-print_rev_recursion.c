@@ -2,7 +2,7 @@
 /**
   * _print_rev_recursion - Write a function that prints a string,
   * followed by a new line.
-  *@s: str var
+  * @s: str var
   * Return: void
   */
 void _print_rev_recursion(char *s)
@@ -13,8 +13,8 @@ void _print_rev_recursion(char *s)
 	}
 	else
 	{
+		_print_rev_recursion(s + 1);
 		_putchar(*s);
-		_puts_recursion(s + 1);
 	}
 }
 
