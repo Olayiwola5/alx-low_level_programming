@@ -14,13 +14,11 @@
   */
 int main(int argc, char *argv[])
 {
-	int i;
-	int sum;
+	int i, j;
 	int zero;
+	int sum;
 
-	i = 0;
-	zero = 0;
-	sum = 0;
+	i = j = zero = sum = 0;
 	if (argc < 1)
 	{
 		printf("%d\n", zero);
