@@ -39,8 +39,7 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		printf("%d", sum);
+		printf("%d\n", sum);
 	}
-	putchar('\n');
 	return (0);
 }
