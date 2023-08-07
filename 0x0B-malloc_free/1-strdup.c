@@ -10,6 +10,7 @@ char *_strdup(char *str)
 {
 	char *new_str;
 	int i, len;
+	char *ptr;
 
 	if (!str)
 		return (NULL);
@@ -25,6 +26,8 @@ char *_strdup(char *str)
 		new_str[i] = str[i];
 	}
 	new_str[i] = '\0';
+	ptr = new_str;
 	free(new_str);
-	return str;
+	
+	return ptr;
 }
