@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * argostostr - concantenate two strings using malloc
+ * argstostr - concantenate two strings using malloc
  * @ac: arg count
  * @av: commandline arguments
  * Return: pointer to concat string
@@ -26,7 +26,7 @@ char *argstostr(int ac, char **av)
 		total++;
 	}
 	total++;
-	str = malloc(total * sizeof(str) + 1);
+	str = malloc(total * sizeof(str));
 	if (!str)
 		return (NULL);
 	str2 = str;
