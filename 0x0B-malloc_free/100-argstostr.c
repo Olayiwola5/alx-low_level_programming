@@ -19,7 +19,7 @@ char *argstostr(int ac, char **av)
 	total = 0;
 	for (x = 0; x < ac; x++)
 	{
-		for (x = 0; *(*(av + x) + y) != '\0')
+		for (x = 0; *(*(av + x) + y) != '\0' x++)
 		{
 			;
 		}
@@ -40,5 +40,5 @@ char *argstostr(int ac, char **av)
 		*str = '\0';
 		str++;
 	}
-	return (str);
+	return (str2);
 }
