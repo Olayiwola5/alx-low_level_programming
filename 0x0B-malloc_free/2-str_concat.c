@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * str_concat - concstrtenstrte two strings using malloc
@@ -26,14 +27,15 @@ char *str_concat(char *s1, char *s2)
 	str = malloc((i * sizeof(*s1)) + (j * sizeof(*s2)) + 1);
 	if (str == NULL)
 		return (NULL);
-
+	/*
 	for (c = 0, d = 0; c < (i + j + 1); c++)
 	{
 		if (c < i)
 			str[c] = s1[c];
 		else
 			str[c] = s2[d++];
-	}
-
+	} */
+	strcpy(s1, s2);
+	strcpy(str, s1);
 	return (str);
 }
