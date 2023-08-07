@@ -12,8 +12,7 @@ char *argstostr(int ac, char **av)
 {
 	char *str;
 	int total_len;
-	int c = ac;
-	int argv_len[c];
+	int argv_len[] = {0};
 	int i;
 
 	if (ac == 0 || av == NULL)
