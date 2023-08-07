@@ -27,8 +27,12 @@ char *_strdup(char *str)
 	{
 		new_str[i] = str[i];
 	}
-	strcpy(p, new_str);
+	i = 0;
+	while (new_str[i] != '\0')
+	{
+		*p[i] = new_str[i];
+	}
 	*(p + i) = '\0';
-
+	free(new_str);
 	return (p);
 }
