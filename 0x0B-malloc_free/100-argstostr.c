@@ -24,7 +24,7 @@ char *argstostr(int ac, char **av)
 		tempo = av[i];
 
 	}
-	tota_len = 0;
+	total_len = 0;
 	while (tempo[i] != '\0')
 		total_len++;
 	str = malloc(total_len * sizeof(str) + 12);
