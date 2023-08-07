@@ -27,7 +27,7 @@ char *_strdup(char *str)
 	{
 		new_str[i] = str[i];
 	}
-	p = strcpy(p, new_str);
+	strcpy(p, new_str);
 	*(p + i) = '\0';
 
 	return (p);
