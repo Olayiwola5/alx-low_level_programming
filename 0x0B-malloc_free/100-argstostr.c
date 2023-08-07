@@ -17,8 +17,7 @@ char *argstostr(int ac, char **av)
 	if (ac == 0 || av == NULL)
 		return (NULL);
 	total_len = 0;
-	
-	for (i = 1; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
 		total_len = strlen(av[i]);
 	}
@@ -33,3 +32,4 @@ char *argstostr(int ac, char **av)
 	}
 	return (str);
 }
+
