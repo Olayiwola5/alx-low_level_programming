@@ -1,40 +1,49 @@
-#include "main.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
- * argstostr - concantenate two strings using malloc
- * @ac: arg count
- * @av: commandline arguments
- * Return: pointer to concat string
- */
+ * argstostr - a function that concatenates
+ *             all the arguments
+ *
+ * @ac: argument counter
+ * @av: argument holder
+ *
+ * Return: a pointer to a new string
+ *         or NULL if it fails
+*/
+
 char *argstostr(int ac, char **av)
 {
-	char *str, *tempo;
-	int total_len;
-	int i;
+	int i, j, k, length;
+	char *str;
 
-	if (ac == 0)
+	if (ac == 0 || av == NULL)
 		return (NULL);
-	if (av == NULL)
-		return (NULL);
-	total_len = 0;
+
+	/*find length of vector + '\0' which makes it a 2d array*/
+	length = 0;
 	for (i = 0; i < ac; i++)
 	{
-		tempo = av[i];
-
+		for (j = 0; av[i][j] != '\0'; j++)
+			length++;
+		length++;
 	}
-	total_len = 0;
-	while (tempo[i] != '\0')
-		total_len++;
-	str = malloc(total_len * sizeof(str) + 12);
+
+	str = malloc((length + 1) * sizeof(char));
 	if (str == NULL)
 		return (NULL);
-	for (i = 1; i < total_len; i++)
+
+	k = 0;
+	for (i = 0; i < ac; i++)
 	{
-		strcat(str, av[i]);
-		strcat(str, "\n");
+		for (j = 0; av[i][j] != '\0'; j++)
+		{
+			str[k] = av[i][j];
+			k++;
+		}
+		str[k] = '\n';
+		k++;
 	}
+	str[k] = '\0';
+
 	return (str);
 }
-
