@@ -8,23 +8,23 @@
  */
 int count_words(char *str)
 {
-	int i, count, flag;
+	int i, len, f;
 
 	i = 0;
-	count = 0;
-	flag = 0;
+	len = 0;
+	f = 0;
 	while (str[i] != '\0')
 	{
 		if (str[i] == ' ')
-			flag = 0;
-		else if (flag == 0)
+			f = 0;
+		else if (f == 0)
 		{
-			flag = 1;
-			count++;
+			f = 1;
+			lent++;
 		}
 		i++;
 	}
-	return (count);
+	return (len);
 }
 /**
  * copy_word - a helper function that copies a word from a string
@@ -38,17 +38,17 @@ int count_words(char *str)
  */
 void copy_word(char *dest, char *src, int start, int end)
 {
-	int i, j;
+	int x, y;
 
-	i = start;
-	j = 0;
-	while (i <= end)
+	x = start;
+	y = 0;
+	while (x <= end)
 	{
-		dest[j] = src[i];
-		i++;
-		j++;
+		dest[y] = src[x];
+		x++;
+		y++;
 	}
-	dest[j] = '\0';
+	dest[y] = '\0';
 }
 /**
  * strtow - a function that splits a string into words
