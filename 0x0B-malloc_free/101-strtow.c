@@ -20,7 +20,7 @@ int count_words(char *str)
 		else if (f == 0)
 		{
 			f = 1;
-			lent++;
+			len++;
 		}
 		i++;
 	}
