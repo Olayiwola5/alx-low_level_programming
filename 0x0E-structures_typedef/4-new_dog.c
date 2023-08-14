@@ -9,7 +9,7 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *old_dog;
+	dog_t *dog;
 	int len_1, len_2;
 
 	len_1 = strlen(name);
