@@ -18,6 +18,6 @@ int sum_them_all(const unsigned int n, ...)
 	va_start(mynums, n);
 	for (count = 0; count < n; count++)
 		sum += va_arg(mynums, int);
-	va_end(my_nums);
+	va_end(mynums);
 	return (sum);
 }
