@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
- * first - function executed before main
+ * print_quote - function executed before main
  * Return: no return.
- *
  */
 void __attribute__ ((constructor)) print_quote()
 {
