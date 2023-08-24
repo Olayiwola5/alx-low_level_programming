@@ -30,6 +30,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		*head = n_node;
 		return (n_node);
 	}
+	/* else */
 	curr_node = *head;
 	while (curr_node->next != NULL)
 	{
