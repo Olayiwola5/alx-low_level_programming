@@ -13,7 +13,7 @@ void free_list(list_t *head)
 	/* creates a temporary nod */
 	list_t *temp;
 
-	while (head != NULL)
+	while (head)
 	{
 		temp = head;
 		head = head->next;
