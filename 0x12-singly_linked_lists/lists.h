@@ -1,8 +1,8 @@
-#ifndef FILE_LISTS
-#define FILE_LISTS
+#ifndef FILE_LISTS_H
+#define FILE_LISTS_H
 
 #include <stdlib.h>
-
+#include <string.h>
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
