@@ -8,15 +8,12 @@
 */
 void free_list(list_t *head)
 {
-	/* creates a temporary nod */
-	list_t *temp;
-
-	while (head != NULL)
+	list_t *temp; // declare a temporary pointer to store the next node
+	while (head != NULL) // loop through the list until the end
 	{
-		temp = head->next
-		free(head);
-		free(head->next);
-
-		head = temp;
+		temp = head->next; // store the next node in temp
+		free(head->str); // free the string stored in the current node
+		free(head); // free the current node
+		head = temp; // move the head pointer to the next node
 	}
 }
