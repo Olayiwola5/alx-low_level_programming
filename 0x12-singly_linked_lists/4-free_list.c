@@ -11,7 +11,7 @@ void free_list(list_t *head)
 	/* creates a temporary nod */
 	list_t *temp;
 
-	while (temp = head != NULL)
+	while ((temp = head) != NULL)
 	{
 		head = head->next;
 		free(temp);
