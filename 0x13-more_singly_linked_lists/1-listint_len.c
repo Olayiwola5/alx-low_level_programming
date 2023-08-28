@@ -20,5 +20,5 @@ size_t listint_len(const listint_t *h)
 		node = node->next;
 		counter++;
 	}
-	return (counter)
+	return (counter);
 }
