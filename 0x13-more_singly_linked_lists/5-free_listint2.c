@@ -6,14 +6,18 @@
 *
 * Return: void.
 */
+
 void free_listint2(listint_t **head)
 {
-	listint_t *del_node;
+	listint_t *del_node; /* Create a temporary node */
 
-	do {
-		del_node = *head;
-		*head = (*head)->next;
-		free(del_node);
-	} while (*head);
-	*head = NULL;
+	if (head == NULL)
+		return;
+
+	while (*head)
+	{
+		del_node = (*head)->next;
+		free(*head);
+		(*head) = del_node;
+	}
 }
