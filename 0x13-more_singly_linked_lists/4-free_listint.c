@@ -1,4 +1,5 @@
 #include "lists.h"
+
 /**
  * free_listint - frees a linked list
  * @head: head of the list
@@ -7,13 +8,12 @@
  */
 void free_listint(listint_t *head)
 {
-	listint_t *del_node;
+	listint_t *temp;
 
-	while (head)
+	while (head != NULL)
 	{
-		del_node = head;
+		temp = head;
 		head = head->next;
-		free(del_node);
+		free(temp);
 	}
 }
-
